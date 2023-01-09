@@ -167,16 +167,16 @@ while code!=0: #while loop will stop if user types 0
 
     print("\nEnter item code number ID to order: ")
     code=int(input("Type 0 to stop: "))
+    
+  else:  #if user enters order outside list, the following message will be displayed
+    print("\ncode",code,"invalid.try again")
+    print("\nEnter item code number: ")
+    code=int(input("Type 0 to stop: "))
 
 ###############################################################################
                #end of while loop
 ################################################################################
 
-#if user enters order outside list, the following message will be displayed
-  else: 
-    print("\ncode",code,"invalid.try again")
-    print("\nEnter item code number: ")
-    code=int(input("Type 0 to stop: "))
 
 #making a for loop using range to display the name and prices of the items ordered by user
 print("\n  Your ordered items are:")
